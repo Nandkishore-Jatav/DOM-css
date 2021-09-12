@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS style position Document</title>
+    <style>
+        #rela {
+            height: 650px;
+            width: 500px;
+            position: absolute;
+            background: #36da27;
+        }
+        #a {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            background:lightblue;
+        }
+        #ab {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            background: lightgreen;
+        }
+        #abs {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            background: yellow;
+        }
+        #abso {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero at rerum error, sit aut tempora! Corrupti, excepturi expedita. Necessitatibus, adipisci.</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, quas!</p>
+    <p><button type="button" onclick="na()">try here</button></p>
+    <p><button type="button" onclick="nay()">try here</button></p>
+    <p><button type="button" onclick="naya()">try here</button></p>
+    <p><button type="button" onclick="nayan()">try here</button></p>
+
+    <div id="rela">
+        <div id="a"></div>
+        <div id="ab"></div>
+        <div id="abs"></div>
+        <div id="abso"></div>
+    </div>
+    
+    <script>
+        function na() {
+            let nand;
+            // const docs = document.getElementById("abso");
+            let ps = 0;
+            clearInterval(nand);
+            nand = setInterval(frame, 20);
+            function frame(){
+                if(ps == 450){
+                    clearInterval(nand);
+                }else{
+                    ps++;
+                    document.getElementById("a").style.top = ps + "px";
+                    document.getElementById("a").style.left = ps + "px";
+                }
+            }
+        }   
+        function nay() {
+            let nand;
+            // const docs = document.getElementById("abso");
+            let ps = 0;
+            clearInterval(nand);
+            nand = setInterval(frame, 20);
+            function frame(){
+                if(ps == 450){
+                    clearInterval(nand);
+                }else{
+                    ps++;
+                    document.getElementById("ab").style.top = ps + "px";
+                    document.getElementById("ab").style.left = ps + "px";
+                }
+            }
+        }   
+        function naya() {
+            let nand;
+            // const docs = document.getElementById("abso");
+            let ps = 0;
+            clearInterval(nand);
+            nand = setInterval(frame, 20);
+            function frame(){
+                if(ps == 450){
+                    clearInterval(nand);
+                }else{
+                    ps++;
+                    document.getElementById("abs").style.top = ps + "px";
+                    document.getElementById("abs").style.left = ps + "px";
+                }
+            }
+        }   
+        function nayan() {
+            let nand;
+            // const docs = document.getElementById("abso");
+            let ps = 0;
+            clearInterval(nand);
+            nand = setInterval(frame, 20);
+            function frame(){
+                if(ps == 450){
+                    clearInterval(nand);
+                }else{
+                    ps++;
+                    document.getElementById("abso").style.top = ps + "px";
+                    document.getElementById("abso").style.left = ps + "px";
+                }
+            }
+        }    
+    </script>
+</body>
+</html>
